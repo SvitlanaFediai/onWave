@@ -208,8 +208,8 @@ section {
 }
 
 .slider__header, .slider__slide {
-  background: url(../../img/slider/picture.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.84)), to(rgb(217, 217, 217)));
-  background: url(../../img/slider/picture.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0.84) 0%, rgb(217, 217, 217) 100%);
+  background: url(./../img/slider/picture.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.84)), to(rgb(217, 217, 217)));
+  background: url(./../img/slider/picture.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0.84) 0%, rgb(217, 217, 217) 100%);
   background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;

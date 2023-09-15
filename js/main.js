@@ -44,8 +44,8 @@ $(document).ready(function(){
 
   //section Products
   $('.slider__products').slick($.extend({
-    prevArrow: '<div class="slider__arrows slider__arrows--prev"><svg class="slider__icon"><use xlink:href="../img/sprite.svg#prev"></use></svg></div>',
-    nextArrow: '<div class="slider__arrows slider__arrows--next"><svg class="slider__icon"><use xlink:href=".././img/sprite.svg#next"></use></svg></div>',
+    prevArrow: '<div class="slider__arrows slider__arrows--prev"><svg class="slider__icon"><use xlink:href="./../img/sprite.svg#prev"></use></svg></div>',
+    nextArrow: '<div class="slider__arrows slider__arrows--next"><svg class="slider__icon"><use xlink:href="./../img/sprite.svg#next"></use></svg></div>',
     appendArrows: $('.slider__products-arrows'),
     appendDots: $('.slider__products-dots'),
     mobileFirst: true,
