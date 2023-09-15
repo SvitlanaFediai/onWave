@@ -13,25 +13,25 @@
       transition: all .3s;
       cursor: pointer;
       z-index: 3;
+      width: 40px;
+      height: 75px;
+      mask: url(./../img/svg/prev.svg);
+      background-color: $color-main;
   
       &:hover {
-        color: $color-tomato-light;
+        background-color: $color-tomato-light;
       }
     }
      
     &--next {
       @extend .slider__arrows--prev;
-  
+      mask: url(./../img/svg/next.svg);
+      background-color: $color-main;
       left: auto;
       right: 0;
     }
   }
 
-  &__icon {
-    width: 40px;
-    height: 75px;
-  }
-    
 }
 
 .slick {

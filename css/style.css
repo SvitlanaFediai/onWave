@@ -412,17 +412,21 @@ section {
   transition: all 0.3s;
   cursor: pointer;
   z-index: 3;
-}
-.slider__arrows--prev:hover, .slider__arrows--next:hover {
-  color: #F16A50;
-}
-.slider__arrows--next {
-  left: auto;
-  right: 0;
-}
-.slider__icon {
   width: 40px;
   height: 75px;
+  -webkit-mask: url(./../img/svg/prev.svg);
+          mask: url(./../img/svg/prev.svg);
+  background-color: #000000;
+}
+.slider__arrows--prev:hover, .slider__arrows--next:hover {
+  background-color: #F16A50;
+}
+.slider__arrows--next {
+  -webkit-mask: url(./../img/svg/next.svg);
+          mask: url(./../img/svg/next.svg);
+  background-color: #000000;
+  left: auto;
+  right: 0;
 }
 
 .slick-slide {
