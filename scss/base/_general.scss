@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $default-font-size;
+
+  @media screen and (max-width: $tablet-start) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 12px;
+  }
+}
+
+body {
+  min-width: 320px;
+  font-weight: 500;
+
+  font-family: $primary-text;
+  font-size: $default-font-size;
+  color: $color-main;
+
+  min-height: 100vh;
+
+}
+
+h2 {
+  margin-bottom: 45px;
+}
+
+section {
+  padding: 70px 0 70px;
+  position: relative;
+  
+  @media screen  and (min-width: $mobile) and (max-width: $tablet-end) {
+    padding: 50px 0 50px;
+  }
+}
+
+

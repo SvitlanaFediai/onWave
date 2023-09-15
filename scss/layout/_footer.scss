@@ -1,0 +1,53 @@
+.footer {
+  background-color: $color-brown-dark;
+  padding-bottom: 20px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 55px;
+
+    @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+}
+
+.social {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  &__contact{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+  }
+
+  &__icon {
+    color: $color-brown-light;
+    width: 30px;
+    height: 30px;
+    transition: all 0.1s ease-in;
+    
+    &:hover {
+      color: $color-tomato-light;
+    }
+  }
+
+  &__link {
+    color: $color-brown-light;
+    display: block;
+  }
+
+}
+
+.logo {
+  &--footer {
+    margin-bottom: 35px;
+  }
+}

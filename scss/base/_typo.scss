@@ -1,0 +1,88 @@
+.navigation {
+  
+  &__list {
+    
+    &-link {
+      font-family: $primary-text;
+      color: $color-main;
+
+      font-weight: 500;
+      font-size: 1.11rem;
+
+      &--footer {
+        color: $color-brown-light;
+      }
+    }
+  }
+}   
+
+.title {
+  text-transform: uppercase;
+  font-weight: 700;
+
+  &__header {
+    font-size: 2.78rem;
+    margin-bottom: 50px;
+    color: $color-brown-light;
+  }
+
+  &__section {
+    font-size: 1.78rem;
+
+    @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+      margin-bottom: 40px;
+    }
+  }
+
+}
+
+.btn {
+  font-size: 1rem;
+  text-transform: uppercase;
+
+  &__detail {
+    color: $color-brown-light;
+
+    &--reverse {
+      color: $color-main;
+    }
+  }
+
+}
+
+.product {
+  &__status {
+    color: $color-brown-light;
+    background-color: $color-tomato-light;
+
+    font-size: 0.56rem;
+    text-transform: uppercase;
+    
+    &--sold {
+      color: $color-main;
+      background-color: $color-brown-light;
+    }
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: .89rem;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 1.33rem;
+  }
+}
+
+.footer {
+  color: $color-brown-light;
+
+  &__title {
+    font-size: 1.44rem;
+  }
+
+  &__rights {
+    font-size: 0.78rem;
+  }
+}

@@ -1,0 +1,19 @@
+.partners {
+  background-color: $color-brown-light;
+
+}
+
+.slider {
+  &__partners {
+    position: relative;
+    margin-bottom: 2.2rem;
+
+    &-dots .slick-dots { 
+
+    }
+
+    &-dots li { 
+      background-color: $color-dot-dark-inactive;
+    }
+  }
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Svitlana Fediai">
+  <meta name="description" content="SCSS, OnWave, html, css, js, Frontend">
+  <title>OnWave</title>
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="content">
+      <div class="header__content">
+        <div class="logo">
+          <a href="#">
+            <svg class="logo__icon icon">
+              <use xlink:href="./img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list-item navigation__list-item--header">
+              <a class="navigation__list-link navigation__list-link--header link" href="#home">Home</a>
+            </li>
+            <li class="navigation__list-item navigation__list-item--header">
+              <a class="navigation__list-link navigation__list-link--header link" href="#catalog">Catalog</a>
+            </li>
+            <li class="navigation__list-item navigation__list-item--header">
+              <a class="navigation__list-link navigation__list-link--header link" href="#news">News</a>
+            </li>
+            <li class="navigation__list-item navigation__list-item--header">
+              <a class="navigation__list-link navigation__list-link--header link" href="#contact">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__panel">
+          <button type="submit" class="btn btn__search">
+            <svg class="btn__icon icon">
+              <use xlink:href="./img/sprite.svg#search-icon"></use>
+            </svg>
+          </button>
+          <button type="button" class="btn btn__profile">
+            <svg class="btn__icon">
+              <use xlink:href="./img/sprite.svg#profile-icon"></use>
+            </svg>
+          </button>
+          <button type="button" class="btn btn__mobile">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="heading slider slider__header">
+      <div class="slider__slide slider__slide--1">
+        <div class="slider__header-item">
+          <h1 class="title title__header">discover new options</h1>
+          <button type="button" class="btn btn__detail">view more</button>
+        </div>
+      </div>
+      <div class="slider__slide slider__slide--2">
+        <div class="slider__header-item">
+          <h1 class="title title__header">expand your horizons</h1>
+          <button type="button" class="btn btn__detail">view more</button>
+        </div>
+      </div>
+      <div class="slider__slide slider__slide--3">
+        <div class="slider__header-item">
+          <h1 class="title title__header">find your own style</h1>
+          <button type="button" class="btn btn__detail">view more</button>
+        </div>
+      </div>
+    </div>
+    <div class="slider-dots slider__header-dots"></div>
+
+  </header>
+
+  <main>
+    
+    <section class="products">
+      <div class="content">
+        <h2 class="title title__section">new arrivals</h2>
+        <div class="slider__products-arrows"></div>
+        <div class="slider slider__products">
+          <div class="product__item">
+            <span class="product__status">in stock</span>
+            <div class="product__card">
+              <img class="product__image" src="./img/product/photo (3).jpg" alt="Hagstrom">
+              <div class="product__description">
+                <p class="product__name">Hagstrom Alvar Limited Edition</p>
+                <p class="product__price">&#8364;2.990,00</p>
+              </div>
+            </div>
+          </div>
+          <div class="product__item">
+            <span class="product__status">in stock</span>
+            <div class="product__card">
+              <img class="product__image" src="./img/product/photo (4).jpg" alt="Hagstrom">
+              <div class="product__description">
+                <p class="product__name">Hagstrom Tremar Viking Deluxe Cloudy Seas</p>
+                <p class="product__price">&#8364;1.300,00</p>
+              </div>
+            </div>
+          </div>
+          <div class="product__item">
+            <span class="product__status product__status--sold">sold</span>
+            <div class="product__card">
+              <img class="product__image" src="./img/product/photo.jpg" alt="Gibson">
+              <div class="product__description">
+                <p class="product__name">Gibson Les Paul Standard 60s</p>
+                <p class="product__price">&#8364;3.749,00</p>
+              </div>
+            </div>
+          </div>
+          <div class="product__item">
+            <span class="product__status">in stock</span>
+            <div class="product__card">
+              <img class="product__image" src="./img/product/photo (1).jpg" alt="Suhr Standard">
+              <div class="product__description">
+                <p class="product__name">Suhr Standard Plus Trans Blue Denim</p>
+                <p class="product__price">&#8364;3.449,00</p>
+              </div>
+            </div>
+          </div>
+          <div class="product__item">
+            <span class="product__status">in stock</span>
+            <div class="product__card">
+              <img class="product__image" src="./img/product/photo (2).jpg" alt="Fender">
+              <div class="product__description">
+                <p class="product__name">Fender Telecaster Black Paisley Limited Edition</p>
+                <p class="product__price">&#8364;1.499,00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-dots slider__products-dots"></div>
+        <button class="btn btn__detail btn__detail--reverse" type="button">view more</button>
+      </div>
+    </section>
+
+    <section class="partners">
+      <div class="content">
+        <h2 class="title title__section">our partners</h2>
+        <div class="slider__partners-arrows"></div>
+        <div class="slider slider__partners">
+          <div class="partner__item">
+            <img class="partner__image" src="./img/partners/epiphone.png" alt="epiphone">
+          </div>
+          <div class="partner__item">
+            <img class="partner__image" src="./img/partners/esp.png" alt="esp">
+          </div>
+          <div class="partner__item">
+            <img class="partner__image" src="./img/partners/gibson.png" alt="gibson">
+          </div>
+          <div class="partner__item">
+            <img class="partner__image" src="./img/partners/engl.png" alt="engl">
+          </div>
+          <div class="partner__item">
+            <img class="partner__image" src="./img/partners/roland.png" alt="roland">
+          </div>
+          <div class="partner__item">
+            <img class="partner__image" src="./img/partners/fender.png" alt="fender">
+          </div>
+          <div class="partner__item">
+            <img class="partner__image" src="./img/partners/peavey.png" alt="peavey">
+          </div>
+          <div class="partner__item">
+            <img class="partner__image" src="./img/partners/marshal.png" alt="marshall">
+          </div>
+          <div class="partner__item">
+            <img class="partner__image" src="./img/partners/orange.png" alt="orange">
+          </div>
+        </div>
+        <div class="slider-dots slider__partners-dots"></div>
+      </div>
+    </section>
+       
+  </main>
+
+  <footer class="footer">
+    <div class="content">
+      <div class="footer__container">
+        <div class="footer__info">
+          <div class="logo logo--footer">
+            <a href="#">
+              <svg class="logo__icon--footer icon">
+                <use xlink:href="./img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+          </div>
+          <nav class="navigation">
+            <ul class="navigation__list navigation__list--footer">
+              <li class="navigation__list-item">
+                <a class="navigation__list-link navigation__list-link--footer link" href="#home">Home</a>
+              </li>
+              <li class="navigation__list-item">
+                <a class="navigation__list-link navigation__list-link--footer link" href="#catalog">Catalog</a>
+              </li>
+              <li class="navigation__list-item">
+                <a class="navigation__list-link navigation__list-link--footer link" href="#news">News</a>
+              </li>
+              <li class="navigation__list-item">
+                 <a class="navigation__list-link navigation__list-link--footer link" href="#contact">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__contacts">
+          <h2 class="footer__title">Contact Us</h2>
+          <div class="social__container">
+            <div class="social__contact">
+              <a class="social__link link" href="https://www.instagram.com/">
+                <svg class="social__icon icon">
+                  <use xlink:href="./img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <a class="social__link link" href="https://uk-ua.facebook.com/">
+                <svg class="social__icon icon">
+                  <use xlink:href="./img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+              <a class="social__link link" href="https://www.pinterest.com/PinterestUA/">
+                <svg class="social__icon icon">
+                  <use xlink:href="./img/sprite.svg#pinterest"></use>
+                </svg>
+              </a>
+              <a class="social__link link" href="https://twitter.com/?lang=uk">
+                <svg class="social__icon icon">
+                  <use xlink:href="./img/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+              <a class="social__link link" href="https://www.youtube.com/">
+                <svg class="social__icon icon">
+                  <use xlink:href="./img/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </div>
+            <p class="social__contact--tel footer__title"><a class="social__link link" href="tel:08003004040">0800 300 4040</a></p>
+          </div>
+          
+        </div>
+      </div>
+      <p class="footer__rights">© Copyright 2023. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./libs/jquery-3.6.3.min.js"></script>
+  <script src="./libs/slickSlider/slick.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

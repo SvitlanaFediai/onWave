@@ -1,0 +1,100 @@
+.header {
+  background-color: $color-brown-light;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+      position: fixed;
+      z-index: 20;
+      width: 100%;
+      background-color: rgba(44, 64, 88,0.6);
+      margin-left: -15px;
+      margin-right: -15px;
+      padding: 10px 15px;
+      
+    }
+  }
+
+  &__panel {
+    display: flex;
+  }
+  
+}
+
+.slider {
+  &__header {
+
+    background: url(../../img/slider/picture.jpg), linear-gradient(180deg, rgba(0,0,0,0.84) 0%, rgba(217,217,217,1) 100%);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-dots .slick-dots {
+      position: absolute;
+      right: 50%;
+      top: 95%;
+    }
+
+    &-item {
+      width: 25%;
+      text-align: center;
+      position: relative;
+      top: 20%;
+      left: 60%;
+    }
+
+    @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+      background: url(../../img/slider/picturemob.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__slide {
+    height: calc(100vh - 80px);
+    
+    @extend .slider__header;
+
+    &--1 {
+      background-image: url(../../img/slider/picture.jpg);
+
+      @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+        background: url(../../img/slider/picturemob.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+      }
+    }
+
+    &--2 {
+      background-image: url(../../img/slider/picture1.jpg);
+
+      @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+        background: url(../../img/slider/picture1mob.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &--3 {
+      background-image: url(../../img/slider/picture2.jpg);
+
+      @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+        background: url(../../img/slider/picture2mob.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+      height: 100vh;
+    }
+  }
+}

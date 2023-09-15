@@ -1,0 +1,25 @@
+//fonts
+$primary-text: 'Montserrat', sans-serif;
+
+//colors
+$color-main:              #000000;
+$color-brown-dark:        #35312D;
+$color-arrow-inactive:    #202020;;
+$color-tomato:            #C62100;
+$color-tomato-light:      #F16A50;
+$color-brown-light:       #F8F1EA;
+$color-dot-inactive:      rgba(248, 241, 234, 0.7);
+$color-dot-dark-inactive: #CAC2BA;
+
+//breakpoints
+$dekstop: 1280px;
+$tablet-end: $dekstop - 1;
+$tablet-start: 768px;
+$mobile-end: $tablet-start - 1;
+$mobile: 320px;
+
+//font-size
+$default-font-size: 18px;
+
+//width
+$max-width: 1145px;

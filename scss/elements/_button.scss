@@ -1,0 +1,87 @@
+.btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  text-decoration: none;
+ 
+  &__mobile {
+    display: none;
+    z-index: 2;
+
+    @media screen and (min-width: $mobile) and (max-width: $mobile-end){
+      display: block;
+      cursor: pointer;
+
+      color: $color-main;
+    }
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    color: $color-main;
+  }
+
+  &__detail {
+    border: 2px solid $color-brown-light;
+    padding: 17px 40px;
+    text-align: center;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      background: $color-tomato-light;
+
+      color: $color-brown-light;
+
+      border: 2px solid transparent;
+    }
+
+    &--reverse {
+      border: 2px solid $color-main;
+      color: $color-main;
+    }
+  }
+
+  &__arrow {
+    width: 40px;
+    height: 40px;
+    border: 1px solid $color-main;
+    color: $color-main;
+    border-radius: 50%;
+    margin: 0 auto;
+    line-height: 36px;
+    font-size: 1.25rem;
+    transition: all .3s;
+
+    &:hover {
+      background-color: $color-main;
+      color: $color-tomato;
+    }
+  }
+  
+   
+}
+
+@media screen and (min-width: $mobile) and (max-width: $mobile-end){
+  .line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: $color-main;
+  }
+
+  .btn__mobile.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .btn__mobile.active .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .btn__mobile.active .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
