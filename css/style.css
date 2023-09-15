@@ -208,8 +208,8 @@ section {
 }
 
 .slider__header, .slider__slide {
-  background: url(../../img/slider/picture.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.84)), to(rgb(217, 217, 217)));
-  background: url(../../img/slider/picture.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0.84) 0%, rgb(217, 217, 217) 100%);
+  background: url(./../img/slider/picture.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.84)), to(rgb(217, 217, 217)));
+  background: url(./../img/slider/picture.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0.84) 0%, rgb(217, 217, 217) 100%);
   background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -228,7 +228,7 @@ section {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .slider__header, .slider__slide {
-    background: url(../../img/slider/picturemob.jpg);
+    background: url(./../img/slider/picturemob.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -238,33 +238,33 @@ section {
   height: calc(100vh - 80px);
 }
 .slider__slide--1 {
-  background-image: url(../../img/slider/picture.jpg);
+  background-image: url(./../img/slider/picture.jpg);
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .slider__slide--1 {
-    background: url(../../img/slider/picturemob.jpg);
+    background: url(./../img/slider/picturemob.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 }
 .slider__slide--2 {
-  background-image: url(../../img/slider/picture1.jpg);
+  background-image: url(./../img/slider/picture1.jpg);
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .slider__slide--2 {
-    background: url(../../img/slider/picture1mob.jpg);
+    background: url(./../img/slider/picture1mob.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 }
 .slider__slide--3 {
-  background-image: url(../../img/slider/picture2.jpg);
+  background-image: url(./../img/slider/picture2.jpg);
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .slider__slide--3 {
-    background: url(../../img/slider/picture2mob.jpg);
+    background: url(./../img/slider/picture2mob.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
